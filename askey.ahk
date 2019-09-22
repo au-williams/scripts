@@ -3,7 +3,6 @@ SendMode Input
 SetWorkingDir %A_ScriptDir%
 
 ; ascii emoticons
-
 ::.angry::
 random("(｀Д´),ヽ(`Д´)ﾉ")
 return
