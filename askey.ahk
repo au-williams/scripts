@@ -9,6 +9,9 @@ return
 ::.bear::
 random("ʕ•ᴥ•ʔ,ʕᵔᴥᵔʔ")
 return
+::.denko::
+random("(´・ω・｀),(´・ω・`)")
+return
 ::.df::
 ::.doubleflip::
 single("┻━┻ ︵ヽ(`Д´)ﾉ︵ ┻━┻")
@@ -25,6 +28,7 @@ random("´ ▽ ` )ﾉ,ヾ(＾∇＾)")
 return
 ::.idk::w(°ｏ°)w
 ::.lenny::( ͡° ͜ʖ ͡°)
+::.salute::(｀･ω･´)ゞ
 ::.shock::(°ロ°) {!}
 ::.shrug::¯\_(ツ)_/¯
 ::.stare::ಠ_ಠ
