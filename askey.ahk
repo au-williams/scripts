@@ -1,72 +1,78 @@
-﻿#NoEnv
+#NoEnv
 SendMode Input
 SetWorkingDir %A_ScriptDir%
 
 ; ascii emoticons
 ::.angry::
-random("(｀Д´),ヽ(`Д´)ﾉ")
+random("(｀Д´),ヽ(`Д´)ﾉ,ლಠ益ಠ)ლ")
 return
 ::.bear::
 random("ʕ•ᴥ•ʔ,ʕᵔᴥᵔʔ")
 return
 ::.df::
 ::.doubleflip::
-choose("┻━┻ ︵ヽ(`Д´)ﾉ︵ ┻━┻")
+single("┻━┻ ︵ヽ(`Д´)ﾉ︵ ┻━┻")
 return
 ::.donger::ヽ༼ຈل͜ຈ༽ﾉ
 ::.gib::
 ::.give::
-choose("༼ つ ◕_◕ ༽つ")
+single("༼ つ ◕_◕ ༽つ")
 return
 ::.happy::\(ᵔᵕᵔ)/
+::.hi::
+::.wave::
+random("´ ▽ ` )ﾉ,ヾ(＾∇＾)")
+return
+::.idk::w(°ｏ°)w
 ::.lenny::( ͡° ͜ʖ ͡°)
+::.shock::(°ロ°) {!}
 ::.shrug::¯\_(ツ)_/¯
 ::.stare::ಠ_ಠ
 ::.tf::
 ::.tableflip::
-choose(random("(╯°□°）╯︵ ┻━┻,(ノಠ益ಠ)ノ彡┻━┻"))
+single(random("(╯°□°）╯︵ ┻━┻,(ノಠ益ಠ)ノ彡┻━┻"))
 return
 ::.uf::
 ::.unflip::
-choose("┬─┬﻿ ノ( ゜-゜ノ)")
+single("┬─┬﻿ ノ( ゜-゜ノ)")
 return
 
 ; useful shortcuts
 ::.em::
 ::.dash::
-choose("—")
+single("—")
 return
 ::.div::
 ::.divide::
-choose("÷")
+single("÷")
 return
 ::.ge::
 ::.greaterequal::
-choose("≥")
+single("≥")
 return
 ::.le::
 ::.lesserequal::
-choose("≤")
+single("≤")
 return
 ::.half::½
 ::.mul::
 ::.multiply::
-choose("×")
+single("×")
 return
 ::.pe::
 ::.plusequal::
-choose("±")
+single("±")
 return
 ::.pi::π
 ::.quarter::¼
 ::.que::¿
 ::.tri::
 ::.triangle::
-choose("▲")
+single("▲")
 return
 
 ; overflow input
-choose(_input) {
+single(_input) {
     SendInput % _input
 }
 
