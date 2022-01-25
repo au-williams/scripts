@@ -1,6 +1,6 @@
 # askey.ahk
 
-Replace hotstrings with their respective ascii emoticons (because slack is lacking in that department).
+Replaces hotstrings with their respective ascii emoticons because slack is lacking in that department.
 
 - *"Why would I want to use this?"* — You don't.
 
@@ -8,4 +8,4 @@ Replace hotstrings with their respective ascii emoticons (because slack is lacki
 
 # capslock.ahk
 
-Hooks into the capslock key and replaces the original functionality with preset hotkeys.
+Hooks into the capslock key and replaces the original functionality with pre-configured hotkeys.
