@@ -1,10 +1,10 @@
 # .gitconfig
 
-This `.gitconfig` file can be stored anywhere for source control. The `.gitconfig` file in `%USERPROFILE%` should be replaced with the following code:
+This `.gitconfig` file can be stored anywhere on the filesystem. The `.gitconfig` file in `%USERPROFILE%` should be replaced with:
 
 ```gitconfig
 [include]
-   path = c:\\path\\to\\my.config
+   path = c:\\path\\to\\this\\.gitconfig
 ```
 
-[(Source)](https://stackoverflow.com/questions/4050905/changing-gitconfig-location-on-windows)
+[(Source)](https://stackoverflow.com/a/37755334)
