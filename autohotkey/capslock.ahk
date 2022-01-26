@@ -13,3 +13,10 @@ Capslock & WheelUp::Send {VOLUME_UP}
 ;Special characters
 Capslock & .:: •
 Capslock & -:: —
+
+;60% keyboard support
+Capslock & Up::Send {PgUp}
+Capslock & Down::Send {PgDn}
+Capslock & Left::Send {Home}
+Capslock & Right::Send {End}
+Capslock & Backspace::Send {Delete}
