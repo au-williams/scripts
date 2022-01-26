@@ -1,14 +1,14 @@
-﻿Import-Module 'C:\tools\poshgit\dahlbyk-posh-git-9bda399\src\posh-git.psd1'
+﻿Import-Module "C:\tools\poshgit\dahlbyk-posh-git-9bda399\src\posh-git.psd1"
 Set-PSReadlineOption -BellStyle None
+Set-Location "c:\source control\"
 
 function prompt {
   $realLASTEXITCODE = $LASTEXITCODE
 
-  Write-Host
+  # Reset color, which can be messed up by Enable-GitColors
+  # $Host.UI.RawUI.ForegroundColor = $GitPromptSettings.DefaultForegroundColor
 
-  #Reset color, which can be messed up by Enable-GitColors
-  #$Host.UI.RawUI.ForegroundColor = $GitPromptSettings.DefaultForegroundColor
-
+  Write-Host ""
   Write-Host "$ENV:USERNAME@" -NoNewline -ForegroundColor DarkYellow
   Write-Host "$ENV:COMPUTERNAME " -NoNewline -ForegroundColor Magenta
 
@@ -19,7 +19,6 @@ function prompt {
     Write-Host ") " -NoNewline -ForegroundColor DarkGray
   }
 
-  #Write-Host " : " -NoNewline -ForegroundColor DarkGray
   Write-Host $($(Get-Location) -replace ($env:USERPROFILE).Replace('\', '\\'), "~") -NoNewline -ForegroundColor Green
   Write-Host " : " -ForegroundColor DarkGray
 
