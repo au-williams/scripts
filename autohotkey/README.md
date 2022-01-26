@@ -1,6 +1,6 @@
 # Files
 
-## askey.ahk
+## • askey.ahk
 
 Replaces hotstrings with their respective ascii emoticons because slack is lacking in that department.
 
@@ -8,7 +8,7 @@ Replaces hotstrings with their respective ascii emoticons because slack is lacki
 
 - *"How do I use this?"* — `.tf` -> `(╯°□°）╯︵ ┻━┻`
 
-## capslock.ahk
+## • capslock.ahk
 
 Hooks into the capslock key and replaces the original functionality with pre-configured hotkeys.
 
