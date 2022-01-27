@@ -12,6 +12,7 @@ Capslock & Space::Send {MEDIA_PLAY_PAUSE}
 Capslock & WheelDown::Send {VOLUME_DOWN}
 Capslock & WheelUp::Send {VOLUME_UP}
 Capslock & MButton::Send {VOLUME_MUTE}
+
 ;Special characters
 Capslock & .:: •
 Capslock & -:: —
