@@ -4,6 +4,8 @@
 	unpush = reset --soft HEAD~1
 [commit]
 	gpgsign = true
+[core]
+	editor = code --wait --new-window
 [gpg]
 	program = C:\\Program Files (x86)\\GnuPG\\bin\\gpg.exe
 [user]
