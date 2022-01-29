@@ -6,6 +6,7 @@
 	gpgsign = true
 [core]
 	editor = code --wait --new-window
+	ignorecase = false
 [gpg]
 	program = C:\\Program Files (x86)\\GnuPG\\bin\\gpg.exe
 [user]
