@@ -1,5 +1,7 @@
 [alias]
-	repo = remote prune origin 
+	ls = "! a=${1:-5}; git log --oneline --graph -$a --decorate #"
+	repo = remote prune origin
+	rush = "! git push --set-upstream origin $(git rev-parse --abbrev-ref HEAD) #"
 	s = status
 	unpush = reset --soft HEAD~1
 [commit]
