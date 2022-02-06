@@ -16,6 +16,7 @@ Capslock & MButton::Send {VOLUME_MUTE}
 ;Special characters
 Capslock & .:: •
 Capslock & -:: —
+Capslock & \::Send {ASC 0173}
 
 ;60% keyboard support
 Capslock & Up::Send {PgUp}
