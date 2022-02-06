@@ -1,5 +1,5 @@
 [alias]
-	ls = "! a=${1:-5}; git log --oneline --graph -$a --decorate #"
+	clog = "! a=${1:-5}; git log --oneline --graph -$a --decorate #"
 	repo = remote prune origin
 	s = status
 	unpush = reset --soft HEAD~1
