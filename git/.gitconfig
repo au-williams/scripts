@@ -1,7 +1,9 @@
 [alias]
 	clog = "! a=${1:-5}; git log --oneline --graph -$a --decorate #"
 	repo = remote prune origin
+	rush = "! git push --set-upstream origin $(git rev-parse --abbrev-ref HEAD) #"
 	s = status
+	shelve = "stash --include-untracked"
 	unpush = reset --soft HEAD~1
 [commit]
 	gpgsign = true
