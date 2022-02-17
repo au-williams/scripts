@@ -12,7 +12,7 @@ function prompt {
   Write-Host "$ENV:USERNAME@" -NoNewline -ForegroundColor DarkYellow
   Write-Host "$ENV:COMPUTERNAME " -NoNewline -ForegroundColor Magenta
 
-  if ($s -ne $null) {
+  if ($null -ne $s) {
     # color for PSSessions
     Write-Host " (`$s: " -NoNewline -ForegroundColor DarkGray
     Write-Host "$($s.Name)" -NoNewline -ForegroundColor Yellow
@@ -23,9 +23,10 @@ function prompt {
   Write-Host " : " -ForegroundColor DarkGray
 
   $global:LASTEXITCODE = $realLASTEXITCODE
+  $isGitDirectory = git rev-parse --is-inside-work-tree
 
   Write-VcsStatus
-  Write-Host ""
+  if ($isGitDirectory) { Write-Host "" }
   return "$ "
 }
 
