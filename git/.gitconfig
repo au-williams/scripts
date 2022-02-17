@@ -6,13 +6,16 @@
 	shelve = "stash --include-untracked"
 	unpush = reset --soft HEAD~1
 [commit]
-	gpgsign = true
+	gpgsign = true # GitHub verified commits
 [core]
 	editor = code --wait --new-window
 	ignorecase = false
 [gpg]
-	program = C:\\Program Files (x86)\\GnuPG\\bin\\gpg.exe
+	program = C:\\Program Files (x86)\\GnuPG\\bin\\gpg.exe # GitHub verified commits
 [user]
 	email = me@austinwilliams.dev
 	name = Austin Williams
-	signingkey = DCD5C086CEECAA7E
+	signingkey = DCD5C086CEECAA7E # GitHub verified commits
+
+# How to set up GitHub verified commits
+# https://gist.github.com/Beneboe/3183a8a9eb53439dbee07c90b344c77e
