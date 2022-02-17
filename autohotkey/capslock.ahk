@@ -3,6 +3,9 @@ SetCapsLockState, alwaysoff
 ;DisplayFusion
 Capslock::^+#d ;TOGGLE MONITOR FADE HOTKEY ... [SHIFT] + [WIN] + [CTRL] + [D]
 
+;Program shortcuts
+Capslock & `::Run powershell.exe
+
 ;Media controls
 Capslock & LAlt::Send {MEDIA_PREV}
 Capslock & WheelLeft::Send {MEDIA_PREV}
@@ -22,5 +25,6 @@ Capslock & \::Send {ASC 0173}
 Capslock & Up::Send {PgUp}
 Capslock & Down::Send {PgDn}
 Capslock & Left::Send {Home}
+
 Capslock & Right::Send {End}
 Capslock & Backspace::Send {Delete}
