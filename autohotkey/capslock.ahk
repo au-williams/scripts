@@ -1,3 +1,4 @@
+SetCapsLockState, off
 SetCapsLockState, alwaysoff
 
 ;DisplayFusion
@@ -25,6 +26,15 @@ Capslock & \::Send {ASC 0173}
 Capslock & Up::Send {PgUp}
 Capslock & Down::Send {PgDn}
 Capslock & Left::Send {Home}
-
 Capslock & Right::Send {End}
 Capslock & Backspace::Send {Delete}
+
+Capslock & Delete::Send {Numpad1}
+Capslock & End::Send {Numpad2}
+Capslock & PgDn::Send {Numpad3}
+Capslock & Insert::Send {Numpad4}
+Capslock & Home::Send {Numpad5}
+Capslock & PgUp::Send {Numpad6}
+Capslock & PrintScreen::Send {Numpad7}
+Capslock & ScrollLock::Send {Numpad8}
+Capslock & Pause::Send {Numpad9}
