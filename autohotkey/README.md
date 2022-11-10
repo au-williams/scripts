@@ -1,17 +1,19 @@
-# Files
+# Installation
 
-## • askey.ahk
+These scripts can be stored anywhere on the filesystem with individual file shortcuts placed in `%APPDATA%\Microsoft\Windows\Start Menu\Programs\Startup` to run on system startup.
 
-Replaces hotstrings with their respective ascii emoticons because slack is lacking in that department.
+## askey.ahk
 
-- *"Why would I want to use this?"* — You don't.
+Replaces hotstrings with their respective ascii emoticons because Discord and Slack are lacking in that department.
 
-- *"How do I use this?"* — `.tf` -> `(╯°□°）╯︵ ┻━┻`
+- _"Why would I want to use this?"_ — You don't.
 
-## • capslock.ahk
+- _"How do I use this?"_ — `.tf` -> `(╯°□°）╯︵ ┻━┻`
 
-Hooks into the capslock key and replaces the original functionality with pre-configured hotkeys.
+## capslock.ahk
 
-# Install
+Hooks into the capslock key and replaces the original functionality with the configured hotkeys. I use this on every computer that has a keyboard.
 
-These scripts can be stored anywhere on the filesystem with individual shortcuts placed in `%APPDATA%\Microsoft\Windows\Start Menu\Programs\Startup` to run on system startup.
+## remote.ahk
+
+Hooks into the face buttons on my [air mouse](https://www.amazon.com/Multifunctional-Compatible-Android-Keyboard-Wireless/dp/B01N1PD7BG/) to enhance compatibility with some Windows programs. I use this exclusively on my HTPC.
