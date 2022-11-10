@@ -4,7 +4,7 @@
 	rush = "! git push --set-upstream origin $(git rev-parse --abbrev-ref HEAD) #"
 	s = status
 	shelve = "stash --include-untracked"
-	unpush = reset --soft HEAD~1
+	unpush = "! a=${1:-1}; git reset --soft HEAD~$a #"
 [commit]
 	gpgsign = true # GitHub verified commits
 [core]
@@ -15,7 +15,7 @@
 [user]
 	email = me@austinwilliams.dev
 	name = Austin Williams
-	signingkey = DCD5C086CEECAA7E # GitHub verified commits
+	signingkey = 3DCC35F92A60D1A3 # GitHub verified commits
 
 # How to set up GitHub verified commits
 # https://gist.github.com/Beneboe/3183a8a9eb53439dbee07c90b344c77e

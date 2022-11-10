@@ -1,12 +1,11 @@
 # .gitconfig
 
-This `.gitconfig` file can be stored anywhere on the filesystem. The `.gitconfig` file in `%USERPROFILE%` should be appended with:
+This `.gitconfig` can be stored anywhere on the filesystem. The `.gitconfig` in `%USERPROFILE%` should be updated or replaced with:
 
 ```gitconfig
 [include]
-   path = c:\\path\\to\\this\\.gitconfig
+   # your path to this .gitconfig, double backslashes are required
+   path = c:\\source control\\scripts-and-configs\\git\\.gitconfig
 ```
-
-**Note:** Double backslashes are required!
 
 [(Source)](https://stackoverflow.com/a/37755334)
