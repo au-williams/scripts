@@ -1,6 +1,6 @@
 # profile.ps1
 
-My custom PowerShell profile used with [PoshGit](https://github.com/dahlbyk/posh-git) and [Chocolatey](https://chocolatey.org/install#individual) installed. Thanks Carter! {[/]
+My PowerShell profile used with [Chocolatey](https://chocolatey.org/install#individual) and [PoshGit](https://community.chocolatey.org/packages/poshgit) installed. Thanks, Carter! {[/]
 
 This `profile.ps1` file can be stored anywhere on the filesystem. The System32 `profile.ps1` file should be replaced with:
 
@@ -9,4 +9,4 @@ $profile = "c:\source control\scripts-and-configs\powershell\profile.ps1" # prof
 . $profile
 ```
 
-**Full path:** `C:\Windows\System32\WindowsPowerShell\v1.0\profile.ps1`
+System32 file path: `C:\Windows\System32\WindowsPowerShell\v1.0\profile.ps1`
