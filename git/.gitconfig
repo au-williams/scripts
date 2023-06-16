@@ -2,9 +2,10 @@
 	clog = "! a=${1:-5}; git log --oneline --graph -$a --decorate #"
 	repo = remote prune origin
 	rush = "! git push --set-upstream origin $(git rev-parse --abbrev-ref HEAD) #"
-	s = status
-	shelve = "stash --include-untracked"
+	s = status -s -b
 	unpush = "! a=${1:-1}; git reset --soft HEAD~$a #"
+[color]
+	ui = true
 [commit]
 	gpgsign = true # GitHub verified commits
 [core]
@@ -12,6 +13,8 @@
 	ignorecase = false
 [gpg]
 	program = C:\\Program Files (x86)\\GnuPG\\bin\\gpg.exe # GitHub verified commits
+[gui]
+	encoding = utf-8
 [user]
 	email = me@austinwilliams.dev
 	name = Austin Williams
