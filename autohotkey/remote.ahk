@@ -1,12 +1,15 @@
 Home::
-    if (WinActive("ahk_exe Plex HTPC.exe")) {
+    if (WinActive("Plex HTPC"))
+    {
         Send, {BackSpace}
     }
-    else if (WinActive("ahk_exe steamwebhelper.exe")) {
+    else if WinActive("Steam Big Picture Mode")
+    {
         Send, {ESC}
     }
-    else {
-        if WinExist("ahk_exe Plex HTPC.exe")
+    else
+    {
+        if WinExist("Plex HTPC")
             WinClose
 
         Run, "C:\Program Files (x86)\Steam\Steam.exe" -start steam://open/bigpicture
