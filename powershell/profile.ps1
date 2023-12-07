@@ -36,5 +36,4 @@ if (Test-Path($ChocolateyProfile)) {
   Import-Module "$ChocolateyProfile"
 }
 
-Clear-Host
 Write-Host "Hello, $ENV:USERNAME! " -NoNewline
