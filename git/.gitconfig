@@ -1,4 +1,5 @@
 [alias]
+	test = "!f() { a=${1:-5}; git log --oneline --decorate --color=always | head -n $a | nl -s ' * ' -w 1; }; f"
 	clog = "! a=${1:-5}; git log --oneline --graph -$a --decorate #"
 	repo = remote prune origin
 	rush = "! git push --set-upstream origin $(git rev-parse --abbrev-ref HEAD) #"
@@ -7,7 +8,7 @@
 [color]
 	ui = true
 [commit]
-	gpgsign = true # GitHub verified commits
+	gpgsign = false # GitHub verified commits
 [core]
 	editor = code --wait --new-window
 	ignorecase = false
