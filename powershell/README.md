@@ -9,4 +9,9 @@ $profile = "c:\source control\scripts-and-configs\powershell\profile.ps1" # prof
 . $profile
 ```
 
-System32 file path: `C:\Windows\System32\WindowsPowerShell\v1.0\profile.ps1`
+System32 `profile.ps1` filepath: `C:\Windows\System32\WindowsPowerShell\v1.0\profile.ps1`
+
+Note: On new installations, the following may need to be set!
+
+- Executing `$Set-ExecutionPolicy Unrestricted` in PowerShell while running as administrator.
+- Appending `-nologo` to the `Windows PowerShell` command line property in Terminal settings.
